@@ -1,0 +1,44 @@
+.navigation-list,
+.navigation-contacts {
+    list-style: none;
+}
+.navigation-list-link,
+.navigation-contacts-mail,
+.navigation-contacts-phone,
+.logo-link {
+    text-decoration: none;
+}
+
+.navigation-list-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+.navigation-contacts-mail, 
+.navigation-contacts-phone {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+.navigation-list-link:hover,
+.navigation-list-link:focus {
+    color: #2196F3;
+}
+.logo-link {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,19;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    /*
+    color: #2196F3; */
+}
+
+
