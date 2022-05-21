@@ -1,13 +1,18 @@
+/* убираем маркировку списка */
 .navigation-list,
 .navigation-contacts,
 .filter-list,
-.examples-list {
+.examples-list,
+.address-list {
     list-style: none;
 }
+/* убирае подчеркивание текста */
+.logo-link-nav,
 .navigation-list-link,
 .navigation-contacts-mail,
 .navigation-contacts-phone,
-.logo-link {
+.logo-link-bottom,
+.address-list-item {
     text-decoration: none;
 }
 .navigation-list-link {
@@ -18,8 +23,9 @@
     letter-spacing: 0.02em;
     color: #212121;
 }
-.navigation-contacts-mail, 
-.navigation-contacts-phone {
+/* электронка и телефон фирмы в шапке */
+.navigation-contacts-mail,
+.navigation-contacts-phone, {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -27,19 +33,25 @@
     letter-spacing: 0.02em;
     color: #757575;
 }
+
 .navigation-list-link:hover,
 .navigation-list-link:focus {
     color: #2196F3;
 }
-.logo-link {
+.navigation-contacts:hover,
+.navigation-contacts:focus {
+    color: #2196F3;
+}
+
+.logo-link-nav,
+.logo-link-bottom {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1,19;
     /* identical to box height */
     letter-spacing: 0.03em;
-    /*
-    color: #2196F3; */
+    color: #2196F3;
 }
 .filter-btn-text {
     font-family: 'Roboto', sans-serif;
@@ -63,6 +75,7 @@
     border-radius: 4px;
     color: #FFFFFF;
 }
+/* образцы портфолио */
 .examples-list-title {
    font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -81,4 +94,44 @@
     letter-spacing: 0.03em;
     color: #757575;
 }
+.examples-list-item {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+.address {
+    font-style: normal;
+}
+/* адрес в подвале страницы */
+.address-list-address-link {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,7;
+    /* or 171% */
+    letter-spacing: 0.03em;
 
+    color: #FFFFFF;
+}
+/* цвет почты и номера телефона в подвале */
+.address-list-mail,
+.address-list-phone {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+/* фоновый цвет шапки */
+.top {
+    background: #FFFFFF;
+}
+/* фоновый цвет подвала */
+.bottom {
+    background: #2F303A;
+}
+
+
+/* Не забывайте подсвечивать синим цветом ссылочку на страницу,
+на которой находится пользователь (Александр Репета в своем вебинаре приводил пример с классом current, обратите на это внимание).*/
