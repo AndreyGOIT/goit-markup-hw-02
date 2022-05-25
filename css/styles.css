@@ -5,6 +5,10 @@
     --hero-bottom-color: #2F303A;
     --top-color: #FFFFFF;
     --text-color: #212121;
+    --text-logo-black: #000000;
+    --navigation-contacts-color: #757575;
+    --address-list-mail-color: rgba(255, 255, 255, 0.6);
+    --our-team-background-color: #F5F4FA;
 }
 /* убираем маркировку списка */
 .navigation-list,
@@ -38,20 +42,19 @@ body {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
-    line-height: 1, 19;
+    line-height: 1.19;
     /* identical to box height */
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent-color);
 }
 .our-occupation-main-title,
 .our-team-main-title {
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1, 17;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--text-color);
 }
 /*===========/COMPONENTS==============*/
 /*===========HEADER==============*/
@@ -60,21 +63,21 @@ body {
     background: var(--top-color);
 }
 .logo-black {
-    color: #000000;
+    color: var(--text-logo-black);
 }
 .navigation-list-link,
 .navigation-contacts-mail,
 .navigation-contacts-phone {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--text-color);
 }
 /* электронка и телефон фирмы в шапке */
 .navigation-contacts-mail,
 .navigation-contacts-phone {
-    color: #757575;
+    color: var(--navigation-contacts-color);
 }
 
 .navigation-list-link:hover,
@@ -94,14 +97,14 @@ body {
 .filter-btn-text {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,6;
+    line-height: 1.6;
     /* identical to box height, or 162% */
     text-align: center;
     letter-spacing: 0.03em;
-    background: #F5F4FA;
+    background: var(--our-team-background-color);
     border-radius: 4px;
     cursor: pointer;
-    color: #212121;
+    color: var(--text-color);
 }
 .filter-btn-text:hover,
 .filter-btn-text:focus {
@@ -111,7 +114,7 @@ body {
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    color: #FFFFFF;
+    color: var(--top-color);
 }
 /* образцы портфолио */
 .examples-list-title {
@@ -120,44 +123,42 @@ body {
     line-height: 2;
     /* identical to box height, or 200% */
     letter-spacing: 0.06em;
-    color: #212121; 
+    color: var(--text-color); 
 }
 .examples-list-type {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     /* identical to box height, or 188% */
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--navigation-contacts-color);
 }
 .examples-list-item {
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    background: var(--top-color);
+    /*border: 1px solid #EEEEEE;*/
 }
 /*==========FOOTER============*/
 .logo-white {
-    color: #FFFFFF;
+    color: var(--top-color);
 }
 .address {
     font-style: normal;
 }
 /* адрес в подвале страницы */
 .address-list-address-link {
-    font-weight: 400;
     font-size: 14px;
-    line-height: 1,7;
+    line-height: 1.7;
     /* or 171% */
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--top-color);
 }
 /* цвет почты и номера телефона в подвале */
 .address-list-mail,
 .address-list-phone {
-    font-weight: 400;
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1.7;
     /* or 171% */
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--address-list-mail-color);
 }
 /* фоновый цвет подвала */
 .bottom {
@@ -184,25 +185,25 @@ body {
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1,36;
+    line-height: 1.36;
     /* or 136% */
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--top-color);
 }
 .hero-btn {
     font-weight: 700;
     font-size: 16px;
-    line-height: 1,88;
+    line-height: 1.88;
     /* identical to box height, or 188% */
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
-    color: #FFFFFF;
-    background: #2196F3;
+    color: var(--top-color);
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -210,27 +211,27 @@ body {
 .our-advantages-title {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--text-color);
 }
 .our-advantages-text {
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1.71;
     /* or 171% */
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--navigation-contacts-color);
 }
 /* Чем мы занимаемся */
 
 
 /* Наша комада */
 .our-team {
-    background: #F5F4FA;
+    background: var(--our-team-background-color);
 }
 .our-team-item {
-    background: #FFFFFF;
+    background: var(--top-color);
     /* material shadow v1 */
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -240,19 +241,19 @@ body {
 .our-team-title {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,19;
+    line-height: 1.19;
     /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--text-color);
 }
 .our-team-text {
     font-size: 16px;
-    line-height: 1,19;
+    line-height: 1.19;
     /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--navigation-contacts-color);
 }
 
 /* Не забывайте подсвечивать синим цветом ссылочку на страницу,
